@@ -43,7 +43,7 @@ if uploaded_file:
                 lambda row: get_tract(row["lat"], row["lon"]), axis=1
             )
 
-            output = io.StringIO()
+            output = io.BytesIO()
             df.to_csv(output, index=False)
             output.seek(0)
 
