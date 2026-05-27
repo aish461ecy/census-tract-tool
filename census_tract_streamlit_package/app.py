@@ -31,7 +31,11 @@ def get_tract(lat, lon):
 uploaded_file = st.file_uploader("Upload CSV", type=["csv"])
 
 if uploaded_file:
-    df = pd.read_csv(uploaded_file)
+    df = pd.read_csv(
+    uploaded_file,
+    encoding='latin-1',
+    on_bad_lines='skip'
+)
 
     if not {"lat", "lon"}.issubset(df.columns):
         st.error("CSV must contain 'lat' and 'lon' columns.")
