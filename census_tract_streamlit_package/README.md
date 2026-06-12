@@ -11,15 +11,3 @@ new CSV with the corresponding **2020 Census Tract GEOIDs**, using the U.S. Cens
 2. Click **Process**
 3. Download the resulting `<name>_with_tracts.csv`
 
-## Streamlit Cloud Deployment
-1. Create a GitHub repo with:
-   - app.py
-   - requirements.txt
-   - README.md
-2. Go to: https://streamlit.io/cloud
-3. Click **Deploy App**
-4. Choose your repo and `app.py`
-5. Deploy
-
-Your app will be available at a shareable URL like:
-`https://yourname.streamlit.app`
